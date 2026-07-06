@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sprint board — Nisargi Shah</title>
+<meta name="description" content="Projects of Nisargi Shah as a kanban sprint board: in production, shipped, and learning backlog." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23FFE01B'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' font-weight='bold' text-anchor='middle' fill='%23111'%3EN%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<div id="progress"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html">NISARGI.SHIP <span class="v">v1.0</span></a>
+    <div class="nav-links">
+      <a href="prd.html">PRD</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="board.html" class="active">Sprint board</a>
+      <a class="btn-demo" href="contact.html">Book a demo</a>
+    </div>
+  </div>
+</nav>
+
+<header style="padding: 64px 0 30px;">
+  <div class="container" style="position: relative;">
+    <div class="hero-notes" style="position: absolute; top: 0; right: 0;">
+      <div class="sticky teal" style="max-width: 170px;">
+        STANDUP SUMMARY:<br />no blockers.<br />never blockers.
+      </div>
+    </div>
+    <span class="badge"><span class="pulse"></span>VELOCITY: HIGH · BLOCKERS: 0</span>
+    <h1 class="stagger" style="margin-top: 22px;">
+      <span class="line">Sprint: <span class="hl">career</span></span><br />
+      <span class="line">highlights</span>
+    </h1>
+    <p class="lead" style="margin-top: 16px;">
+      Every project I've shipped, in the format PMs trust most. Cards don't lie —
+      they're either done or they're not.
+    </p>
+  </div>
+</header>
+
+<section style="padding-top: 24px;">
+  <div class="container">
+    <div class="kanban">
+
+      <!-- COLUMN 1 -->
+      <div class="reveal">
+        <p class="kanban-col-head" style="color: var(--teal-dark);">
+          <span class="dot" style="background: var(--green);"></span>IN PRODUCTION <span class="count">(5)</span>
+        </p>
+
+        <div class="kcard">
+          <h4>GT health monitoring</h4>
+          <p>Gas-turbine failure prediction + anomaly detection with MLOps. Owned end-to-end: requirements → deployment.</p>
+          <div class="kfoot">
+            <div>
+              <span class="tag tag-purple">epic</span>
+              <span class="tag tag-teal">flagship</span>
+            </div>
+            <span class="pts">13 pts</span>
+          </div>
+        </div>
+
+        <div class="kcard">
+          <h4>Early event detection</h4>
+          <p>Failure-prediction rollout for 1,000 critical rotary assets — model alerts become early ops notifications.</p>
+          <div class="kfoot">
+            <span class="tag tag-teal">predictive analytics</span>
+            <span class="pts">8 pts</span>
+          </div>
+        </div>
+
+        <div class="kcard">
+          <h4>APM upgrade — GE Vernova</h4>
+          <p>Core team member on the asset performance management upgrade: 150K+ assets, 10 sites, one vendor to align.</p>
+          <div class="kfoot">
+            <span class="tag tag-orange">vendor mgmt</span>
+            <span class="pts">8 pts</span>
+          </div>
+        </div>
+
+        <div class="kcard">
+          <h4>IoT instrumentation ×3</h4>
+          <p>Scoped and planned 3 projects instrumenting ~80 rotary assets across 3 sites. Less manual reading, less downtime.</p>
+          <div class="kfoot">
+            <span class="tag tag-purple">scoping</span>
+            <span class="pts">5 pts</span>
+          </div>
+        </div>
+
+        <div class="kcard">
+          <h4>MTBF reliability dashboard</h4>
+          <p>Defined the metrics, built the dashboard. Incident data consolidated across sites — and actually used.</p>
+          <div class="kfoot">
+            <span class="tag tag-amber">Power BI</span>
+            <span class="pts">3 pts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="reveal d1">
+        <p class="kanban-col-head" style="color: #534AB7;">
+          <span class="dot" style="background: var(--purple);"></span>SHIPPED <span class="count">(5)</span>
+        </p>
+
+        <div class="kcard">
+          <h4>Satellite imagery pipeline</h4>
+          <p>ISRO — reproducible Python pipeline for soil-moisture estimation and spatial validation at 100 m resolution.</p>
+          <div class="kfoot">
+            <div>
+              <span class="tag tag-purple">geospatial</span>
+              <span class="tag tag-teal">ISRO</span>
+            </div>
+            <span class="pts">13 pts</span>
+          </div>
+        </div>
+
+        <div class="kcard">
+          <h4>Air-traffic delay prediction</h4>
+          <p>ML models predicting U.S. flight delays, translated into a pre-COVID vs COVID business-impact analysis for aviation.</p>
+          <div class="kfoot">
+            <span class="tag tag-teal">ML + biz analysis</span>
+            <span class="pts">5 pts</span>
+          </div>
+        </div>
+
+        <div class="kcard">
+          <h4>Bone fracture detection</h4>
+          <p>X-ray diagnostic ML tool shipped end-to-end — interface designed for clinicians, not for the demo.</p>
+          <div class="kfoot">
+            <span class="tag tag-orange">ML for healthcare</span>
+            <span class="pts">5 pts</span>
+          </div>
+        </div>
+
+        <div class="kcard">
+          <h4>Health &amp; fitness tracker</h4>
+          <p>Flask platform: login, calorie/BMI/workout tracking, personalized recommendations via web scraping.</p>
+          <div class="kfoot">
+            <span class="tag tag-purple">full-stack</span>
+            <span class="pts">3 pts</span>
+          </div>
+        </div>
+
+        <div class="kcard">
+          <h4>Employee notification system</h4>
+          <p>AM/NS internship — UI redesign, Django REST backend, automated company-wide email workflows.</p>
+          <div class="kfoot">
+            <span class="tag tag-teal">Django</span>
+            <span class="pts">3 pts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="reveal d2">
+        <p class="kanban-col-head" style="color: #854F0B;">
+          <span class="dot" style="background: #EF9F27;"></span>LEARNING BACKLOG <span class="count">(3)</span>
+        </p>
+
+        <div class="kcard dashed">
+          <h4>GenAI product patterns</h4>
+          <p>Google Cloud GenAI Fundamentals ✓ certified. Now exploring how GenAI reshapes industrial analytics products.</p>
+          <div class="kfoot">
+            <span class="tag tag-amber">in progress</span>
+            <span class="pts">? pts</span>
+          </div>
+        </div>
+
+        <div class="kcard dashed">
+          <h4>French, conversational</h4>
+          <p>Currently at beginner. The backlog is honest — that's the point of a backlog.</p>
+          <div class="kfoot">
+            <span class="tag tag-amber">side quest</span>
+            <span class="pts">2 pts</span>
+          </div>
+        </div>
+
+        <div class="kcard dashed" style="border-color: var(--orange);">
+          <h4>Your team's hardest problem</h4>
+          <p>Awaiting assignment. Historically, items like this move to "In production" fast.</p>
+          <div class="kfoot">
+            <span class="tag tag-orange">unestimated</span>
+            <a href="contact.html" style="font-family: var(--font-mono); font-size: 11px; color: var(--orange);">assign to me →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card reveal" style="margin-top: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <strong style="font-family: var(--font-display); font-size: 18px;">Sprint review scheduled?</strong>
+        <p style="font-size: 13.5px; color: var(--muted);">30 minutes. Bring questions, I'll bring receipts.</p>
+      </div>
+      <a class="btn orange" href="contact.html">Book a demo →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <p>NISARGI SHAH © 2026 — built like a product: PRD'd, roadmapped, shipped.</p>
+    <p><a href="mailto:nisargi3112@gmail.com">nisargi3112@gmail.com</a> · <a href="https://www.linkedin.com/in/nisargi-shah/" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
