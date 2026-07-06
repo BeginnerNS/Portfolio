@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PRD — Nisargi Shah</title>
+<meta name="description" content="Product requirements document for Nisargi Shah: problem statement, target users, requirements, success metrics, risks and mitigations." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23FFE01B'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' font-weight='bold' text-anchor='middle' fill='%23111'%3EN%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<div id="progress"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html">NISARGI.SHIP <span class="v">v1.0</span></a>
+    <div class="nav-links">
+      <a href="prd.html" class="active">PRD</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="board.html">Sprint board</a>
+      <a class="btn-demo" href="contact.html">Book a demo</a>
+    </div>
+  </div>
+</nav>
+
+<header style="padding: 64px 0 20px;">
+  <div class="container" style="position: relative;">
+    <span class="badge"><span class="pulse"></span>DOC STATUS: APPROVED ✓</span>
+    <h1 class="stagger" style="margin-top: 22px;">
+      <span class="line">PRD: <span class="hl hl-yellow">Nisargi Shah</span></span>
+    </h1>
+    <p class="lead" style="margin-top: 16px;">
+      Most portfolios tell you what someone did. A PRD tells you why they're worth building with.
+      Review it the way you'd review any product doc — critically.
+    </p>
+  </div>
+</header>
+
+<section style="padding-top: 28px;">
+  <div class="container">
+    <div class="doc reveal">
+
+      <div class="hero-notes" style="position: absolute; top: -18px; right: 28px;">
+        <div class="sticky pink" style="max-width: 170px;">
+          REVIEWER NOTE:<br />scroll to §06 —<br />she listed her own risks. bold.
+        </div>
+      </div>
+
+      <span class="tag tag-purple">PRODUCT REQUIREMENTS DOCUMENT</span>
+      <h2 style="margin: 14px 0 0; font-size: 32px;">Candidate-as-a-Product v1.0</h2>
+
+      <dl class="doc-meta">
+        <dt>AUTHOR</dt><dd>Nisargi Shah (dogfooding this product since 2003)</dd>
+        <dt>REVIEWERS</dt><dd>You — hiring manager / recruiter / future teammate</dd>
+        <dt>STATUS</dt><dd style="color: var(--green); font-weight: 600;">Approved — open to opportunities</dd>
+        <dt>TARGET RELEASE</dt><dd>Your next sprint</dd>
+        <dt>LOCATION</dt><dd>Navi Mumbai, India · open to relocation</dd>
+        <dt>CONTACT</dt><dd><a href="mailto:nisargi3112@gmail.com">nisargi3112@gmail.com</a> · <a href="https://www.linkedin.com/in/nisargi-shah/" target="_blank" rel="noopener">LinkedIn</a></dd>
+      </dl>
+
+      <!-- 01 PROBLEM -->
+      <div class="doc-section reveal">
+        <h3>01 — Problem statement</h3>
+        <p style="font-size: 15.5px;">
+          Teams building data-heavy products lose weeks translating between engineers, business
+          stakeholders, and vendors. Analysts who can read a model's output often can't run a
+          stakeholder meeting; PMs who can run the meeting often can't read the model.
+          <strong>The market lacks people who have actually owned a product end-to-end across
+          that divide</strong> — not observed one, owned one.
+        </p>
+      </div>
+
+      <!-- 02 SOLUTION -->
+      <div class="doc-section reveal">
+        <h3>02 — Proposed solution</h3>
+        <p style="font-size: 15.5px;">
+          One hire fluent in both dialects. At 23, I have already: owned an industrial ML product from
+          requirement-gathering to production deployment, run business analysis across 5 concurrent
+          IoT projects, managed a vendor relationship with GE Vernova, and built geospatial data
+          pipelines at ISRO. B.Tech CS (9.31 CGPA) under the hood.
+        </p>
+      </div>
+
+      <!-- 03 TARGET USERS -->
+      <div class="doc-section reveal">
+        <h3>03 — Target users</h3>
+        <div class="persona-grid">
+          <div class="card flat persona">
+            <div class="avatar" style="background: var(--purple-light); color: #534AB7;">PM</div>
+            <strong style="font-family: var(--font-display);">The product leader</strong>
+            <blockquote>"I need an APM who won't drown in ambiguity — someone who has shipped, not just studied frameworks."</blockquote>
+            <p style="font-size: 13px; margin-top: 10px; color: var(--green); font-family: var(--font-mono);">✓ served by: end-to-end GT product ownership</p>
+          </div>
+          <div class="card flat persona">
+            <div class="avatar" style="background: var(--green-light); color: var(--teal-dark);">DL</div>
+            <strong style="font-family: var(--font-display);">The data team lead</strong>
+            <blockquote>"I need an analyst who understands deployment reality — MLOps, messy sensors, actual users."</blockquote>
+            <p style="font-size: 13px; margin-top: 10px; color: var(--green); font-family: var(--font-mono);">✓ served by: production ML on 150K+ assets</p>
+          </div>
+          <div class="card flat persona">
+            <div class="avatar" style="background: #FAECE7; color: #993C1D;">F</div>
+            <strong style="font-family: var(--font-display);">The founder</strong>
+            <blockquote>"I need one person who can talk to customers in the morning and query the database after lunch."</blockquote>
+            <p style="font-size: 13px; margin-top: 10px; color: var(--green); font-family: var(--font-mono);">✓ served by: full-stack generalist profile</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 REQUIREMENTS -->
+      <div class="doc-section reveal">
+        <h3>04 — Requirements (all shipped)</h3>
+        <div class="req-row">
+          <span class="tag tag-p0">P0</span>
+          <span class="req-text">Own a product lifecycle end-to-end — discovery, definition, delivery, deployment</span>
+          <span class="req-status">✓ GT health monitoring</span>
+        </div>
+        <div class="req-row">
+          <span class="tag tag-p0">P0</span>
+          <span class="req-text">Speak ML fluently — failure prediction, anomaly detection, MLOps workflows</span>
+          <span class="req-status">✓ Reliance + ISRO</span>
+        </div>
+        <div class="req-row">
+          <span class="tag tag-p0">P0</span>
+          <span class="req-text">Manage stakeholders &amp; vendors across engineering, operations, and business</span>
+          <span class="req-status">✓ GE Vernova partnership</span>
+        </div>
+        <div class="req-row">
+          <span class="tag tag-orange">P1</span>
+          <span class="req-text">Run multiple workstreams in parallel with Gantt-based planning</span>
+          <span class="req-status">✓ 5 concurrent epics</span>
+        </div>
+        <div class="req-row">
+          <span class="tag tag-orange">P1</span>
+          <span class="req-text">Analytics &amp; BI stack — Python, SQL, Power BI, Tableau</span>
+          <span class="req-status">✓ daily drivers</span>
+        </div>
+        <div class="req-row">
+          <span class="tag tag-orange">P1</span>
+          <span class="req-text">Build dashboards that people actually use — MTBF reliability metrics across sites</span>
+          <span class="req-status">✓ in production</span>
+        </div>
+        <div class="req-row">
+          <span class="tag tag-amber">P2</span>
+          <span class="req-text">Geospatial pipelines — QGIS, Rasterio, GDAL, GeoPandas at 100 m resolution</span>
+          <span class="req-status">✓ ISRO missions</span>
+        </div>
+        <div class="req-row">
+          <span class="tag tag-amber">P2</span>
+          <span class="req-text">Web development — Django REST, Flask, JavaScript, full-stack delivery</span>
+          <span class="req-status">✓ AM/NS + projects</span>
+        </div>
+      </div>
+
+      <!-- 05 SUCCESS METRICS -->
+      <div class="doc-section reveal">
+        <h3>05 — Success metrics</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px;">
+          <div style="background: #FAFAF5; border-radius: 8px; padding: 16px;">
+            <span style="font-family: var(--font-mono); font-size: 24px; font-weight: 700;"><span data-count="150" data-suffix="K+">0</span></span>
+            <p style="font-size: 12px; color: var(--muted);">assets under APM across 10 sites</p>
+          </div>
+          <div style="background: #FAFAF5; border-radius: 8px; padding: 16px;">
+            <span style="font-family: var(--font-mono); font-size: 24px; font-weight: 700; color: var(--purple);">3–8 d</span>
+            <p style="font-size: 12px; color: var(--muted);">advance warning before equipment failure</p>
+          </div>
+          <div style="background: #FAFAF5; border-radius: 8px; padding: 16px;">
+            <span style="font-family: var(--font-mono); font-size: 24px; font-weight: 700;"><span data-count="1000">0</span></span>
+            <p style="font-size: 12px; color: var(--muted);">critical assets on early event detection</p>
+          </div>
+          <div style="background: #FAFAF5; border-radius: 8px; padding: 16px;">
+            <span style="font-family: var(--font-mono); font-size: 24px; font-weight: 700; color: var(--green);"><span data-count="9.31">0</span></span>
+            <p style="font-size: 12px; color: var(--muted);">CGPA, B.Tech Computer Science</p>
+          </div>
+          <div style="background: #FAFAF5; border-radius: 8px; padding: 16px;">
+            <span style="font-family: var(--font-mono); font-size: 24px; font-weight: 700;">~80</span>
+            <p style="font-size: 12px; color: var(--muted);">rotary assets instrumented via 3 IoT projects</p>
+          </div>
+          <div style="background: #FAFAF5; border-radius: 8px; padding: 16px;">
+            <span style="font-family: var(--font-mono); font-size: 24px; font-weight: 700; color: var(--orange);">#53</span>
+            <p style="font-size: 12px; color: var(--muted);">international rank, Mathematics Olympiad</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 RISKS -->
+      <div class="doc-section reveal">
+        <h3>06 — Risks &amp; mitigations</h3>
+        <div style="display: grid; gap: 10px;">
+          <div style="background: #FAFAF5; border-radius: 8px; padding: 14px 18px; font-size: 14.5px;">
+            <span style="color: var(--red); font-family: var(--font-mono); font-weight: 700;">RISK:</span> Early-career profile — under two years post-graduation.<br />
+            <span style="color: var(--green); font-family: var(--font-mono); font-weight: 700;">MITIGATION:</span> Shipped a production ML product in year one. Most careers don't compound this fast.
+          </div>
+          <div style="background: #FAFAF5; border-radius: 8px; padding: 14px 18px; font-size: 14.5px;">
+            <span style="color: var(--red); font-family: var(--font-mono); font-weight: 700;">RISK:</span> Domain experience concentrated in industrial IoT.<br />
+            <span style="color: var(--green); font-family: var(--font-mono); font-weight: 700;">MITIGATION:</span> The domain changed three times already (web → space → energy). The method — learn fast, ship — transferred every time.
+          </div>
+          <div style="background: #FAFAF5; border-radius: 8px; padding: 14px 18px; font-size: 14.5px;">
+            <span style="color: var(--red); font-family: var(--font-mono); font-weight: 700;">RISK:</span> Might outgrow the role quickly.<br />
+            <span style="color: var(--green); font-family: var(--font-mono); font-weight: 700;">MITIGATION:</span> That's not a risk. That's the roadmap.
+          </div>
+        </div>
+      </div>
+
+      <!-- 07 OUT OF SCOPE -->
+      <div class="doc-section reveal">
+        <h3>07 — Out of scope</h3>
+        <ul style="list-style: none; font-size: 14.5px; color: var(--muted);">
+          <li style="padding: 6px 0;">✗ Saying "let's circle back" without a date attached</li>
+          <li style="padding: 6px 0;">✗ Roadmaps that are actually wishlists</li>
+          <li style="padding: 6px 0;">✗ Dashboards nobody opens twice</li>
+          <li style="padding: 6px 0;">✗ Estimating in "it should be quick"</li>
+        </ul>
+      </div>
+
+      <!-- 08 APPENDIX -->
+      <div class="doc-section reveal" style="margin-bottom: 0;">
+        <h3>08 — Appendix</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px;">
+          <div>
+            <strong style="font-family: var(--font-display); font-size: 15px;">Education</strong>
+            <p style="font-size: 13.5px; color: var(--muted); margin-top: 6px;">
+              B.Tech Computer Science, Pandit Deendayal Energy University — CGPA 9.31 (2021–2025)
+            </p>
+          </div>
+          <div>
+            <strong style="font-family: var(--font-display); font-size: 15px;">Certifications</strong>
+            <p style="font-size: 13.5px; color: var(--muted); margin-top: 6px;">
+              Google Cloud GenAI Fundamentals · Goldman Sachs SWE Virtual Program · Incubation &amp; Entrepreneurship, IIT Bombay (NPTEL)
+            </p>
+          </div>
+          <div>
+            <strong style="font-family: var(--font-display); font-size: 15px;">Also ships with</strong>
+            <p style="font-size: 13.5px; color: var(--muted); margin-top: 6px;">
+              Editor-in-Chief, dept. newsletter · Black belt, Karate · English, Hindi, Gujarati; French (beginner)
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIGN-OFF -->
+    <div class="card reveal" style="margin-top: 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <strong style="font-family: var(--font-display); font-size: 18px;">Sign-off required</strong>
+        <p style="font-size: 13.5px; color: var(--muted);">Approve this PRD and move it to your sprint.</p>
+      </div>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <a class="btn primary" href="roadmap.html">See the roadmap →</a>
+        <a class="btn orange" href="contact.html">Approve &amp; book demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <p>NISARGI SHAH © 2026 — built like a product: PRD'd, roadmapped, shipped.</p>
+    <p><a href="mailto:nisargi3112@gmail.com">nisargi3112@gmail.com</a> · <a href="https://www.linkedin.com/in/nisargi-shah/" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

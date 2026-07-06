@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Roadmap — Nisargi Shah</title>
+<meta name="description" content="Career roadmap of Nisargi Shah, written as product release notes with BDD acceptance criteria — from v0.1 alpha to v1.0 GA and beyond." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23FFE01B'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='20' font-weight='bold' text-anchor='middle' fill='%23111'%3EN%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<div id="progress"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index.html">NISARGI.SHIP <span class="v">v1.0</span></a>
+    <div class="nav-links">
+      <a href="prd.html">PRD</a>
+      <a href="roadmap.html" class="active">Roadmap</a>
+      <a href="board.html">Sprint board</a>
+      <a class="btn-demo" href="contact.html">Book a demo</a>
+    </div>
+  </div>
+</nav>
+
+<header style="padding: 64px 0 30px;">
+  <div class="container" style="position: relative;">
+    <div class="hero-notes" style="position: absolute; top: 0; right: 0;">
+      <div class="sticky" style="max-width: 170px;">
+        SHIPPING CADENCE:<br />every version ships<br />bigger than the last.
+      </div>
+    </div>
+    <span class="badge"><span class="pulse"></span>RELEASE TRAIN — ON SCHEDULE</span>
+    <h1 class="stagger" style="margin-top: 22px;">
+      <span class="line">The <span class="hl hl-teal">roadmap</span>,</span><br />
+      <span class="line">with release notes.</span>
+    </h1>
+    <p class="lead" style="margin-top: 16px;">
+      Experience sections list duties. Release notes list what actually shipped — with
+      acceptance criteria in Gherkin, because "responsible for" is not a testable statement.
+    </p>
+  </div>
+</header>
+
+<section style="padding-top: 24px;">
+  <div class="container">
+    <div class="timeline">
+
+      <!-- v2.0 FUTURE -->
+      <div class="release future reveal">
+        <div class="release-head">
+          <span class="version-pill next">v2.0.0 — NEXT</span>
+          <span class="release-date">SHIP DATE: YOUR CALL</span>
+        </div>
+        <h3>Your team</h3>
+        <p class="role">Role TBD — Product / Data / the bridge between both</p>
+        <div class="card flat" style="border-style: dashed;">
+          <p style="font-size: 14.5px; color: var(--muted);">
+            Feature requests welcome. This release is scoped collaboratively — bring your hardest
+            ambiguous problem to the discovery call.
+          </p>
+          <a class="btn orange" style="margin-top: 14px; font-size: 13px; padding: 9px 18px;" href="contact.html">Propose scope →</a>
+        </div>
+      </div>
+
+      <!-- v1.0 GA -->
+      <div class="release current reveal">
+        <div class="release-head">
+          <span class="version-pill ga">v1.0.0 — GA</span>
+          <span class="release-date">AUG 2025 → PRESENT · IN PRODUCTION</span>
+        </div>
+        <h3>Reliance Industries — Analyst, Digital &amp; IoT</h3>
+        <p class="role">Navi Mumbai · Business analysis across asset reliability &amp; industrial IoT</p>
+
+        <div class="card flat">
+          <p style="font-family: var(--font-mono); font-size: 11px; color: var(--purple); letter-spacing: 1px; margin-bottom: 12px;">RELEASE NOTES</p>
+          <ul>
+            <li><strong>GT Health Monitoring (flagship):</strong> owned the full product lifecycle of an in-house gas-turbine failure-prediction and anomaly-detection product with MLOps — requirements from reliability engineers, feature definition, dev coordination, production deployment.</li>
+            <li><strong>Early Event Detection:</strong> rolling out failure prediction across 1,000 critical assets — model alerts converted into early notifications operations teams act on.</li>
+            <li><strong>APM with GE Vernova:</strong> core team member on the software upgrade covering 150,000+ assets across 10 sites; day-to-day vendor partnership.</li>
+            <li><strong>IoT instrumentation:</strong> scoped and planned 3 projects instrumenting ~80 rotary assets across 3 sites — better readings, less manual effort, less downtime.</li>
+            <li><strong>MTBF dashboard:</strong> defined metrics and built the reliability dashboard consolidating incident data across sites.</li>
+          </ul>
+          <div class="gherkin" style="margin-top: 16px;">
+            <span class="feat">Feature:</span> Turn model output into prevented downtime<br />
+            <span class="kw">Given</span> 5 concurrent epics and stakeholders in engineering, ops, and vendors<br />
+            <span class="kw">When</span> an ML model flags a failure signature on a critical asset<br />
+            <span class="kw">Then</span> the right team gets an actionable warning <span class="val">3–8 days early</span><br />
+            <span class="kw">And</span> the outage never makes it to the incident report ✓
+          </div>
+          <div class="tags-row">
+            <span class="tag tag-purple">product ownership</span>
+            <span class="tag tag-teal">MLOps</span>
+            <span class="tag tag-orange">GE Vernova</span>
+            <span class="tag tag-amber">Gantt planning</span>
+            <span class="tag tag-purple">Power BI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- v0.9 RC -->
+      <div class="release reveal">
+        <div class="release-head">
+          <span class="version-pill">v0.9.0 — RC</span>
+          <span class="release-date">JAN 2025 → MAY 2025</span>
+        </div>
+        <h3>ISRO, Space Application Centre — Data Science Intern</h3>
+        <p class="role">Ahmedabad · Release candidate: proving production-readiness at national scale</p>
+
+        <div class="card flat">
+          <p style="font-family: var(--font-mono); font-size: 11px; color: var(--purple); letter-spacing: 1px; margin-bottom: 12px;">RELEASE NOTES</p>
+          <ul>
+            <li><strong>Satellite imagery pipeline:</strong> end-to-end, reproducible Python pipeline for satellite imagery processing and geospatial analysis — soil-moisture estimation, feature extraction, and spatial validation at 100 m resolution — supporting research teams and upcoming satellite missions.</li>
+          </ul>
+          <div class="gherkin" style="margin-top: 16px;">
+            <span class="feat">Feature:</span> Make raw satellite data mission-ready<br />
+            <span class="kw">Given</span> raw imagery from earth-observation satellites<br />
+            <span class="kw">When</span> the pipeline processes, extracts, and validates at <span class="val">100 m resolution</span><br />
+            <span class="kw">Then</span> research teams get reproducible, analysis-ready data<br />
+            <span class="kw">And</span> upcoming missions inherit the tooling ✓
+          </div>
+          <div class="tags-row">
+            <span class="tag tag-purple">Python</span>
+            <span class="tag tag-teal">QGIS · Rasterio · GDAL</span>
+            <span class="tag tag-orange">GeoPandas</span>
+            <span class="tag tag-amber">NumPy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- v0.6 BETA -->
+      <div class="release reveal">
+        <div class="release-head">
+          <span class="version-pill">v0.6.0 — BETA</span>
+          <span class="release-date">JUN 2023 → JUL 2023</span>
+        </div>
+        <h3>AM/NS India — Web Development Intern</h3>
+        <p class="role">Surat · First integration test with production users</p>
+
+        <div class="card flat">
+          <p style="font-family: var(--font-mono); font-size: 11px; color: var(--purple); letter-spacing: 1px; margin-bottom: 12px;">RELEASE NOTES</p>
+          <ul>
+            <li><strong>Employee notification system:</strong> end-to-end enhancements — redesigned UI, Django REST backend, automated company-wide email workflows.</li>
+          </ul>
+          <div class="gherkin" style="margin-top: 16px;">
+            <span class="feat">Feature:</span> Notifications employees actually read<br />
+            <span class="kw">Given</span> a legacy internal notification tool<br />
+            <span class="kw">When</span> the UI is redesigned and workflows automated<br />
+            <span class="kw">Then</span> company-wide comms ship without manual effort ✓
+          </div>
+          <div class="tags-row">
+            <span class="tag tag-purple">Django REST</span>
+            <span class="tag tag-teal">UI redesign</span>
+            <span class="tag tag-orange">automation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- v0.1 ALPHA -->
+      <div class="release reveal">
+        <div class="release-head">
+          <span class="version-pill">v0.1.0 — ALPHA</span>
+          <span class="release-date">SEP 2021 → MAY 2025</span>
+        </div>
+        <h3>PDEU — B.Tech Computer Science</h3>
+        <p class="role">Gandhinagar · Core architecture: CGPA 9.31</p>
+
+        <div class="card flat">
+          <p style="font-family: var(--font-mono); font-size: 11px; color: var(--purple); letter-spacing: 1px; margin-bottom: 12px;">RELEASE NOTES</p>
+          <ul>
+            <li><strong>Foundation:</strong> computer science core, 9.31 CGPA — the architecture everything since is built on.</li>
+            <li><strong>Pre-installed features:</strong> International Rank 53, Mathematics Olympiad · Black belt in Karate · Editor-in-Chief, department newsletter.</li>
+            <li><strong>Side quests:</strong> hackathons, NGO volunteering, entrepreneurship certification (IIT Bombay).</li>
+          </ul>
+          <div class="tags-row">
+            <span class="tag tag-purple">CS fundamentals</span>
+            <span class="tag tag-teal">discipline.dll</span>
+            <span class="tag tag-orange">leadership</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card reveal" style="margin-top: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <strong style="font-family: var(--font-display); font-size: 18px;">Want the work items behind the releases?</strong>
+        <p style="font-size: 13.5px; color: var(--muted);">Every project, on one sprint board.</p>
+      </div>
+      <a class="btn primary" href="board.html">Open sprint board →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <p>NISARGI SHAH © 2026 — built like a product: PRD'd, roadmapped, shipped.</p>
+    <p><a href="mailto:nisargi3112@gmail.com">nisargi3112@gmail.com</a> · <a href="https://www.linkedin.com/in/nisargi-shah/" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
