@@ -1,0 +1,137 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-5pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeItemPlain}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Nisargi Shah}} & Email: \href{mailto:nisargi3112@gmail.com}{nisargi3112@gmail.com}\\
+  \href{https://www.linkedin.com/in/nisargi-shah/}{linkedin.com/in/nisargi-shah} $|$ Navi Mumbai, India & Mobile: +91-9825839118 \\
+\end{tabular*}
+
+%----------SUMMARY-----------------
+\section{Summary}
+\small{Data-focused Analyst at Reliance Industries building predictive-maintenance and asset-analytics solutions for industrial IoT --- failure prediction, anomaly detection, and MLOps-backed deployments across 150,000+ assets. Former Data Science Intern at ISRO with hands-on experience in Python, ML modeling, and large-scale geospatial data pipelines.}
+
+%----------EDUCATION---------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Pandit Deendayal Energy University (PDEU)}{Gandhinagar, Gujarat}
+    {B.Tech in Computer Science; CGPA: 9.31}{Sep 2021 -- May 2025}
+\resumeSubHeadingListEnd
+
+%----------EXPERIENCE--------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Reliance Industries Limited}{Navi Mumbai, Maharashtra}
+    {Analyst -- Digital \& IoT, Asset Reliability}{Aug 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{GT Health Monitoring (Failure Prediction \& Anomaly Detection)}
+        {Drove the complete lifecycle --- requirement gathering through final deployment --- of an in-house gas-turbine health monitoring product built on failure-prediction and anomaly-detection models with an MLOps pipeline; provides 3--8 days advance warning of equipment failures, preventing unplanned outages and production losses.}
+      \resumeItem{Early Event Detection (EED)}
+        {Analyze model outputs from a predictive analytics system covering 1,000 critical rotary assets, translating predictions into actionable early-failure notifications (3--8 days ahead) for site reliability teams.}
+      \resumeItem{Asset Performance Management (GE Vernova)}
+        {Manage asset-health data on GE Vernova's APM platform for 150,000+ assets across 10 sites; core team member overseeing GE's APM software upgrade.}
+      \resumeItem{IoT Instrumentation Analytics}
+        {Lead analytics on 3 IoT projects instrumenting $\sim$80 rotary assets across 3 sites, improving sensor-reading accuracy and reducing manual data collection and equipment downtime.}
+      \resumeItem{MTBF Dashboard}
+        {Built a Mean-Time-Between-Failures dashboard consolidating asset-level incident data to track reliability metrics and failure rates across multiple sites.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Space Application Centre, ISRO}{Ahmedabad, Gujarat}
+    {Data Science Intern}{Jan 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Satellite Imagery Data Pipeline}
+        {Developed an end-to-end, reproducible Python pipeline for satellite imagery processing and geospatial analysis --- soil-moisture estimation, feature extraction, and spatial validation at 100\,m resolution --- supporting research and upcoming satellite missions. \textit{Stack: Python, QGIS, Rasterio, GDAL, NumPy, GeoPandas, Matplotlib.}}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {AM/NS India Limited}{Surat, Gujarat}
+    {Web Development Intern}{Jun 2023 -- Jul 2023}
+    \resumeItemListStart
+      \resumeItem{Full-Stack Development}
+        {Enhanced an employee notification system: redesigned the frontend, built Django REST services, and automated company-wide email workflows.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------PROJECTS----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Air-Traffic Delay Prediction (COVID Impact Study)}
+    {Built ML models to predict U.S. air-traffic delays and conducted a comparative business-impact analysis of pre-COVID vs COVID-era operations, translating predictions into operational insights for aviation.}
+  \resumeSubItem{Bone Fracture Detection from X-ray Images}
+    {Developed and deployed an ML-based fracture detection system with an intuitive interface for real-world diagnostic support.}
+  \resumeSubItem{Health \& Fitness Tracker}
+    {Built a Flask platform tracking calories, BMI, workouts, and activity, with personalized recommendations via web scraping.}
+\resumeSubHeadingListEnd
+
+%----------SKILLS------------------
+\section{Skills}
+\resumeSubHeadingListStart
+  \resumeItemPlain{\textbf{Languages}: Python, SQL, C, JavaScript}
+  \resumeItemPlain{\textbf{ML \& Analytics}: Predictive Maintenance, Failure Prediction, Anomaly Detection, MLOps workflows, NumPy, Pandas, Matplotlib, GeoPandas}
+  \resumeItemPlain{\textbf{BI \& Visualization}: Power BI, Tableau}
+  \resumeItemPlain{\textbf{Databases}: MySQL, Microsoft SQL Server, MongoDB, Azure Data Lake}
+  \resumeItemPlain{\textbf{Geospatial}: QGIS, Rasterio, GDAL}
+  \resumeItemPlain{\textbf{Tools \& Cloud}: Git, Docker, AWS, Azure}
+\resumeSubHeadingListEnd
+
+%----------CERTIFICATIONS----------
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeItemPlain{\textbf{Google Cloud GenAI Fundamentals} --- February 2024}
+  \resumeItemPlain{\textbf{Goldman Sachs Software Engineering Virtual Experience Program} --- February 2024}
+\resumeSubHeadingListEnd
+
+%----------ADDITIONAL--------------
+\section{Additional Information}
+\resumeSubHeadingListStart
+  \resumeItemPlain{\textbf{Achievements}: International Rank 53, Mathematics Olympiad; Editor-in-Chief, department newsletter; hackathon participant}
+  \resumeItemPlain{\textbf{Languages}: English, Hindi, Gujarati (fluent); French (b
