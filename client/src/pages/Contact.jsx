@@ -54,7 +54,7 @@ export default function Contact() {
             <Reveal className="card">
               <Tag tone="purple">DEMO REQUEST FORM</Tag>
               <p style={{ fontSize: 14, color: "var(--muted)", margin: "12px 0 20px" }}>
-                Submissions land in MongoDB — yes, this form is a live full-stack feature, not a mailto link.
+                Submissions land straight in my inbox — triaged like any incoming feature request, replied to like a P0.
               </p>
               <form onSubmit={onSubmit}>
                 <div className="field">
