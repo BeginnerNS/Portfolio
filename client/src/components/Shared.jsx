@@ -35,7 +35,7 @@ export function Footer() {
   return (
     <footer>
       <div className="footer-inner">
-        <p>NISARGI SHAH © 2026 — built like a product: PRD'd, roadmapped, shipped. Stack: MongoDB · Express · React · Node.</p>
+        <p>NISARGI SHAH © 2026 — built like a product: PRD'd, roadmapped, shipped. Stack: React · Vite · Vercel.</p>
         <p>
           <a href="mailto:nisargi3112@gmail.com">nisargi3112@gmail.com</a> ·{" "}
           <a href="https://www.linkedin.com/in/nisargi-shah/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
