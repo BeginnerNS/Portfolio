@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "Portfolio of Nisargi Shah — career as a product, built on MongoDB, Express, React, Node",
   "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
   "scripts": {
     "install:all": "cd server && npm install && cd ../client && npm install",
     "dev:server": "cd server && npm run dev",
     "dev:client": "cd client && npm run dev",
     "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build",
-    "render-build": "cd client && npm install && npm run build && cd ../server && npm install",
+    "build": "cd client && npm install && npm run build",
     "start": "node server/src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0"
   }
 }

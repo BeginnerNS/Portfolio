@@ -1,10 +1,10 @@
 # Nisargi Shah — portfolio, built like a product
 
-**Live site:** [nisargi-portfolio.onrender.com](https://nisargi-portfolio.onrender.com)
+**Live site:** [nisargi-portfolio.vercel.app](https://nisargi-portfolio.vercel.app)
 
 A portfolio where the career is the product: the About page is a **PRD**, Experience is a **Roadmap with release notes and Gherkin acceptance criteria**, Projects is a **Sprint board**, and Contact is **Book a demo** — with a working demo-request form backed by MongoDB.
 
-**Stack:** MongoDB · Express · React (Vite) · Node.js — deployed on Render.
+**Stack:** MongoDB · Express · React (Vite) · Node.js — deployed on Vercel.
 
 ## Pages
 
@@ -19,11 +19,12 @@ A portfolio where the career is the product: the About page is a **PRD**, Experi
 ## Project structure
 
 ```
+├── api/               Vercel serverless function — Express app (all /api/* routes)
 ├── client/            React front end (Vite + React Router, custom motion hooks)
-├── server/            Express API + Mongoose models + seed script
+├── server/            Mongoose models, seed script, local-dev entry point
 ├── static-version/    Zero-dependency HTML version (backup)
-├── render.yaml        Render Blueprint (one-service deploy)
-└── package.json       Root convenience scripts
+├── vercel.json        Vercel config (build + routing)
+└── package.json       Root scripts + server dependencies
 ```
 
 ## Run locally
@@ -59,17 +60,30 @@ With Atlas connected, `POST /api/demo-requests` persists recruiter demo requests
 
 All GET routes fall back to in-memory seed data when no database is connected. Any non-`/api` GET serves the built React app (SPA catch-all).
 
-## Deployment (Render)
+## Deployment (Vercel)
 
-Deployed as a single Render web service via `render.yaml` (Blueprint):
+Deployed on Vercel — static frontend + Express API as a serverless function.
 
-- **Build:** `npm run render-build` — builds the React client, installs server deps
-- **Start:** `npm start` — Express serves both the API and `client/dist`
-- **Env:** set `MONGODB_URI` in the service's Environment settings to enable the database (a placeholder keeps the site running on seed data)
+**Architecture on Vercel:**
+- `client/dist` — Vite build, served as static assets (instant, global CDN)
+- `api/index.js` — Express app as a serverless function handling all `/api/*` routes
+- `vercel.json` — routes `/api/*` to the function, SPA catch-all for client-side routing
 
-The service deploys from the public repo, so pushes don't auto-deploy — after committing changes, use **Manual Deploy → Deploy latest commit** in the Render dashboard.
+**Required environment variable** (set in Vercel dashboard → Settings → Environment Variables):
 
-> Free-tier note: the instance sleeps after inactivity; the first request after a while takes ~30–50 s to wake.
+| Key | Value |
+|-----|-------|
+| `MONGODB_URI` | Your Atlas connection string |
+
+Without `MONGODB_URI` the API falls back to in-memory seed data — the site still works.
+
+**To deploy from scratch:**
+1. Import the repo at [vercel.com/new](https://vercel.com/new) — pick `beginnerNS/portfolio`
+2. Vercel auto-detects `vercel.json`; no framework override needed
+3. Add `MONGODB_URI` in Settings → Environment Variables
+4. Deploy — Vercel runs `npm install` then `cd client && npm install && npm run build`
+
+Pushes to `main` auto-deploy. Preview deployments are created for every PR.
 
 ## Contact
 
