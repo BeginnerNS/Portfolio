@@ -176,7 +176,7 @@ export default function Prd() {
                 <div>
                   <strong style={{ fontFamily: "var(--font-display)", fontSize: 15 }}>Certifications</strong>
                   <p style={{ fontSize: 13.5, color: "var(--muted)", marginTop: 6 }}>
-                    Google Cloud GenAI Fundamentals · Goldman Sachs SWE Virtual Program · Incubation &amp; Entrepreneurship, IIT Bombay (NPTEL)
+                    McKinsey Forward Program (McKinsey &amp; Company) · Google Cloud GenAI Fundamentals · Incubation &amp; Entrepreneurship, IIT Bombay (NPTEL)
                   </p>
                 </div>
                 <div>

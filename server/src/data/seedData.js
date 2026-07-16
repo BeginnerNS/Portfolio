@@ -48,8 +48,8 @@ export const releases = [
         body: "Owned the full product lifecycle of an in-house gas-turbine failure-prediction and anomaly-detection product with MLOps — requirements from reliability engineers, feature definition, dev coordination, production deployment.",
       },
       {
-        heading: "Early Event Detection",
-        body: "Rolling out failure prediction across 1,000 critical assets — model alerts converted into early notifications operations teams act on.",
+        heading: "Early Event Detection (Honeywell)",
+        body: "Established AI-based failure-prediction program run with Honeywell across 1,000 critical rotary assets — model alerts automated into early notifications (3–8 days ahead) operations teams act on.",
       },
       {
         heading: "APM with GE Vernova",
@@ -57,11 +57,11 @@ export const releases = [
       },
       {
         heading: "IoT instrumentation",
-        body: "Scoped and planned 3 projects instrumenting ~80 rotary assets across 3 sites — better readings, less manual effort, less downtime.",
+        body: "Scoped and planned 3 IoT projects instrumenting ~80 rotary assets across 3 sites, tracking milestones and dependencies in MS Project (Gantt) — better readings, less manual effort, less downtime.",
       },
       {
         heading: "MTBF dashboard",
-        body: "Defined metrics and built the reliability dashboard consolidating incident data across sites.",
+        body: "Defined the metrics and built the reliability dashboard, using SQL to consolidate asset-level incident data across sites.",
       },
     ],
     gherkin: {
@@ -73,7 +73,7 @@ export const releases = [
         { keyword: "And", text: "the outage never makes it to the incident report ✓" },
       ],
     },
-    tags: ["product ownership", "MLOps", "GE Vernova", "Gantt planning", "Power BI"],
+    tags: ["product ownership", "MLOps", "GE Vernova", "Honeywell", "Gantt planning", "Power BI"],
     order: 1,
   },
   {
@@ -82,11 +82,11 @@ export const releases = [
     kind: "past",
     dateRange: "JAN 2025 → MAY 2025",
     title: "ISRO, Space Application Centre — Data Science Intern",
-    role: "Ahmedabad · Release candidate: proving production-readiness at national scale",
+    role: "Ahmedabad · NISAR Soil Moisture Products — proving production-readiness at national scale",
     notes: [
       {
         heading: "Satellite imagery pipeline",
-        body: "End-to-end, reproducible Python pipeline for satellite imagery processing and geospatial analysis — soil-moisture estimation, feature extraction, and spatial validation at 100 m resolution — supporting research teams and upcoming satellite missions.",
+        body: "Built an end-to-end Python pipeline for satellite imagery processing and geospatial analysis at 100 m resolution, feeding SAC's pre-launch soil-moisture retrieval for the NASA-ISRO NISAR mission. ISRO published the operational 100 m soil-moisture products in Feb 2026.",
       },
     ],
     gherkin: {
@@ -95,10 +95,10 @@ export const releases = [
         { keyword: "Given", text: "raw imagery from earth-observation satellites" },
         { keyword: "When", text: "the pipeline processes, extracts, and validates at 100 m resolution" },
         { keyword: "Then", text: "research teams get reproducible, analysis-ready data" },
-        { keyword: "And", text: "upcoming missions inherit the tooling ✓" },
+        { keyword: "And", text: "the NASA-ISRO NISAR mission inherits the tooling ✓" },
       ],
     },
-    tags: ["Python", "QGIS · Rasterio · GDAL", "GeoPandas", "NumPy"],
+    tags: ["Python", "NISAR", "QGIS · Rasterio · GDAL", "GeoPandas", "NumPy"],
     order: 2,
   },
   {
@@ -111,7 +111,7 @@ export const releases = [
     notes: [
       {
         heading: "Employee notification system",
-        body: "End-to-end enhancements — redesigned UI, Django REST backend, automated company-wide email workflows.",
+        body: "Revamped and migrated the birthday/anniversary notification automation to Python/Django serving 60,000 employees nationwide — redesigned UI, automated company-wide email workflows.",
       },
     ],
     gherkin: {
@@ -122,7 +122,7 @@ export const releases = [
         { keyword: "Then", text: "company-wide comms ship without manual effort ✓" },
       ],
     },
-    tags: ["Django REST", "UI redesign", "automation"],
+    tags: ["Python · Django", "UI redesign", "60K employees"],
     order: 3,
   },
   {
@@ -160,9 +160,9 @@ export const projects = [
   },
   {
     title: "Early event detection",
-    description: "Failure-prediction rollout for 1,000 critical rotary assets — model alerts become early ops notifications.",
+    description: "Established failure-prediction program with Honeywell across 1,000 critical rotary assets — model alerts become early ops notifications.",
     column: "production",
-    tags: [{ label: "predictive analytics", tone: "teal" }],
+    tags: [{ label: "predictive analytics", tone: "teal" }, { label: "Honeywell", tone: "orange" }],
     points: "8 pts",
     order: 2,
   },
@@ -192,9 +192,9 @@ export const projects = [
   },
   {
     title: "Satellite imagery pipeline",
-    description: "ISRO — reproducible Python pipeline for soil-moisture estimation and spatial validation at 100 m resolution.",
+    description: "ISRO — Python pipeline feeding the NASA-ISRO NISAR mission's pre-launch soil-moisture retrieval at 100 m resolution.",
     column: "shipped",
-    tags: [{ label: "geospatial", tone: "purple" }, { label: "ISRO", tone: "teal" }],
+    tags: [{ label: "geospatial", tone: "purple" }, { label: "NISAR · ISRO", tone: "teal" }],
     points: "13 pts",
     order: 1,
   },
@@ -224,7 +224,7 @@ export const projects = [
   },
   {
     title: "Employee notification system",
-    description: "AM/NS internship — UI redesign, Django REST backend, automated company-wide email workflows.",
+    description: "AM/NS — birthday/anniversary automation for 60,000 employees on Python/Django; UI redesign + email workflows.",
     column: "shipped",
     tags: [{ label: "Django", tone: "teal" }],
     points: "3 pts",
